@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "rock-paper-scissors"
+version = "0.1.0"
+description = ""
+authors = ["Author Name <szymon_jozef@proton.me>"]
+readme = "README.md"
+license = "mit"
+packages = [
+  { include = "rock_paper_scissors" }
+]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+rock-paper-scissors = "rock_paper_scissors.__main__:main"
